@@ -42,6 +42,44 @@
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-3 p-4 gap-2"
         ></div>
       </section>
+
+      <!-- show all button -->
+      <section>
+        <div id="show-all" class="hidden">
+          <button onclick="handleShowAll()" class="btn btn-primary">
+            Show All
+          </button>
+        </div>
+      </section>
+      <section>
+        
+        <dialog
+          id="show_details_modal"
+          class="modal modal-bottom sm:modal-middle"
+        >
+          <div class="modal-box text-left">
+            <div id="details_container">
+              <h3 class="font-bold text-lg">iPhone 13 Pro Max</h3>
+            <img src="" alt="">
+    <p class="py-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    <ul>
+      <li><b>Storage:</b> 128GB/256GB/1TB Storage, No card slot</li>
+      <li><b>Display Size:</b> 6.7 Inches, 109.8 cm</li>
+      <li><b>Chipset:</b> Apple A15 Bionic</li>
+      <li><b>Memory:</b> 128GB 6 GB RAM, 256GB RAM, 512GB RAM 1TB GB RAM</li>
+      <li><b>Release date:</b> Released 2021, September 24</li>
+      <li><b>Brand:</b> Apple</li>
+      <li><b>GPS:</b> A-Yes, with A-GPS, GLONASS, GALILEO, BDS, QZSS</li>
+    </ul>
+            </div>
+              <form method="dialog" class="text-right">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn ">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </section>
     </main>
     <footer></footer>
     <script src="script/phone.js"></script>
