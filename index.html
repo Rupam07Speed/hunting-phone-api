@@ -4,6 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hunting Phone Api</title>
+
+    <!-- styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h2 class="text-2xl">Hunting Phone</h2>
+    </header>
+    <main class="text-center">
+      <!-- search phone -->
+      <section>
+        <input
+          type="text"
+          id="search-field"
+          placeholder="Search here"
+          class="input input-bordered w-full max-w-xs"
+        />
+        <button onclick="handleSearch()" class="btn btn-primary">Search</button>
+      </section>
+      <!-- loading spinner -->
+      <section>
+        <span
+          id="spinner"
+          class="loading loading-spinner loading-lg gap-4 mt-7 hidden"
+        ></span>
+      </section>
+      <!-- all phones -->
+      <section>
+        <div
+          id="phone-display-section"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-3 p-4 gap-2"
+        ></div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="script/phone.js"></script>
+  </body>
 </html>
